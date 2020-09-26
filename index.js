@@ -32,7 +32,7 @@ const app = async function() {
       const parseSingle = async function(json) {
         const ipfsPath = '/ipfs/'+json.at;
         let content = '';
-        for await (const chunk of ipfs.cat(ipfsPath,{timeout:IPFS_CAT_TIMEOUT})) {
+        for (const chunk of ipfs.cat(ipfsPath,{timeout:IPFS_CAT_TIMEOUT})) {
             content += chunk;
         }
         let isnew=true;
