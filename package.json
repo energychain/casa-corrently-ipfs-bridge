@@ -1,0 +1,23 @@
+{
+  "name": "casa-corrently-ipfs-bridge",
+  "version": "1.0.0",
+  "description": "IPFS Bridge Implementation for Casa Corrently based P2P Energy Management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/energychain/casa-corrently-ipfs-bridge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/energychain/casa-corrently-ipfs-bridge/issues"
+  },
+  "homepage": "https://github.com/energychain/casa-corrently-ipfs-bridge#readme",
+  "dependencies": {
+    "ipfs": "^0.50.2",
+    "ipfs-http-client": "^47.0.1"
+  }
+}
