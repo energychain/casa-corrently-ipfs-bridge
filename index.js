@@ -75,7 +75,7 @@ const app = async function() {
       if(typeof json.broadcast !== 'undefined') {
         const ipfsPath = '/ipfs/'+json.broadcast;
         let content = '';
-        for await (const chunk of ipfs.cat(ipfsPath,{timeout:IPFS_CAT_TIMEOUT})) {
+        for (const chunk of ipfs.cat(ipfsPath,{timeout:IPFS_CAT_TIMEOUT})) {
             content += chunk;
         }
         bridge.files.write('/broadcasts/'+msg.from,content,{create:true,parents:true});
